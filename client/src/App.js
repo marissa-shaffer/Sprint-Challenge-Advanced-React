@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import Axios from 'axios';
+import axios from 'axios';
 
 class App extends Component {
 
@@ -24,6 +24,7 @@ class App extends Component {
   }
 
   render(){
+    console.log(this.state.players);
     return (
       <div>
 
