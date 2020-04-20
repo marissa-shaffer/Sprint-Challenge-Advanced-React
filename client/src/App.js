@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
+import Players from "./components/Players";
 import axios from 'axios';
 
 class App extends Component {
@@ -27,7 +28,7 @@ class App extends Component {
     console.log(this.state.players);
     return (
       <div>
-
+        <Players players={this.state.players} />
       </div>
     );
   }
