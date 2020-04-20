@@ -1,6 +1,14 @@
 import React from 'react';
 
-
+function Players (props) {
+    return(
+        <div>
+            {props.players.map (player => (
+                <PlayerCard player={player} key={player.created}/>
+            ))}
+        </div>
+    )
+};
 
 
 
