@@ -28,9 +28,11 @@ class App extends Component {
   render(){
     console.log(this.state.players);
     return (
-      <div>
-        <Navbar />
-        <Players players={this.state.players} />
+      <div className="App" data-testid="App">
+        <div>
+          <Navbar />
+          <Players players={this.state.players} />
+        </div>
       </div>
     );
   }
